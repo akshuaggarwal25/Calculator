@@ -26,13 +26,33 @@ body{
     margin-right: 30px;
     color: white;
 }
+.result input{
+    background: transparent;
+    border:none;
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+    float: right;
+    text-align: right;
+    margin-right: 0px;
+
+}
 .calcu{
     font-weight: 200;
     margin-top: 20px;
     font-size: 20px;
 }
-.calcu span{
-    color: #d8d8d8;
+
+.calcu input{
+    background: transparent;
+    border:none;
+    color: #e8e5e5;
+    font-size: 20px;
+    float: right;
+    text-align: right;
+    margin-right: 0px;
+    margin-top: 30px;
+
 }
 .result h1{
     font-size: 55px;

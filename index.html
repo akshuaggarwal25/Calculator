@@ -9,50 +9,47 @@
 <body>
     <div class="container">
         <div class="header">
+            <form name="form">
            <div class="result">
-                <h1 id="res">1425</h1>
+            <input type="text" name="res" />
            </div> 
 
            <div class="calcu">
-            <span>142*15</span>
+            <input type="text" name="cals" />
            </div> 
 
         </div>
         <div class="main">
-            
-            <input type="button" value="AC" id="two" onclick="calcu();" class="AC"/>
-            <input type="button" value="C" id="two" onclick="calcu();"/>
-            <input type="button" value="%" id="two" onclick="calcu();"/>
-            <input type="button" value="/" id="two" onclick="calcu();" class="rightbtn"/>
+            <input type="button" value="AC"onclick="form.cals.value =''">
+            <input type="button" value="C" onclick="form.cals.value +='C'">
+            <input type="button" value="%" onclick="form.cals.value +='%'">
+            <input type="button" value="/" onclick="form.cals.value +='/'" class="rightbtn /">
         </div>
         <div class="main1">
-            <input type="button" value="7" id="two" onclick="calcu();"/>
-            <input type="button" value="8" id="two" onclick="calcu();"/>
-            <input type="button" value="9" id="two" onclick="calcu();"/>
-            <input type="button" value="X" id="two" onclick="calcu();" class="rightbtn"/>
+            <input type="button" value="7" onclick="form.cals.value +='7'">
+            <input type="button" value="8" onclick="form.cals.value +='8'">
+            <input type="button" value="9" onclick="form.cals.value +='9'">
+            <input type="button" value="X" onclick="form.cals.value +='*'" class="rightbtn /">
         </div>
         <div class="main1">
-            <input type="button" value="4" id="two" onclick="calcu();"/>
-            <input type="button" value="5" id="two" onclick="calcu();"/>
-            <input type="button" value="6" id="two" onclick="calcu();"/>
-            <input type="button" value="-" id="two" onclick="calcu();" class="rightbtn"/>
+            <input type="button" value="4" onclick="form.cals.value +='4'">
+            <input type="button" value="5" onclick="form.cals.value +='5'">
+            <input type="button" value="6" onclick="form.cals.value +='6'">
+            <input type="button" value="-" onclick="form.cals.value +='-'" class="rightbtn /">
         </div>
         <div class="main1">
-            
-            
-            <input type="button" value="1" id="two" onclick="calcu();"/>
-            <input type="button" value="2" id="two" onclick="calcu();"/>
-            <input type="button" value="3" id="two" onclick="calcu();"/>
-            <input type="button" value="+" id="two" onclick="calcu();" class="rightbtn"/>
-            
+            <input type="button" value="1" onclick="form.cals.value +='1'">
+            <input type="button" value="2" onclick="form.cals.value +='2'">
+            <input type="button" value="3" onclick="form.cals.value +='3'">
+            <input type="button" value="+" onclick="form.cals.value +='+'" class="rightbtn /">
         </div>
         <div class="main1">
-            <input type="button" value="0" id="two" onclick="calcu();"/>
-            <input type="button" value="." id="two" onclick="calcu();"/>
-            <input type="button" value="," id="two" onclick="calcu();" class="rightbtn" />
-            <input type="button" value="=" id="two" onclick="calcu();" class="equalto"/>
+            <input type="button" value="0" onclick="form.cals.value +='0'">
+            <input type="button" value="00" onclick="form.cals.value +='00'">
+            <input type="button" value="," onclick="form.cals.value +=','" class="rightbtn">
+            <input type="button" value="=" onclick="form.res.value =eval(form.cals.value)" class="equalto /">
         </div>
-        
+    </form>
     </div>
     <script src="js/index.js"></script>
 </body>
