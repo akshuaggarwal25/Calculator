@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My TRy</title>
+    <style>
+        #myDiv {
+            background-color: yellow;
+            width: 20%;
+            height: 30px;
+
+        }
+        #res {
+            background-color: tomato;
+            width: 20%;
+            height: 30px;
+
+        }
+        .res {
+            background-color: tomato;
+            width: 20%;
+            height: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="myDiv"></div>
+    <div id="res"></div>
+    <br>
+    <div class="res" id="non"></div>
+    <script>
+        var ar = [];
+      
+        document.addEventListener('keyup',function(event){
+            var kc=event.keyCode;
+           var vali=/^[0-9.-]+$/;
+          
+            if(vali.test(event.key) || kc==187 || kc==56 || kc==187 || kc==191 || kc==53){
+               
+                ar.push(event.key);
+           //  console.log(ar);
+             let previous = document.getElementById('myDiv').innerHTML;
+             document.getElementById('myDiv').innerHTML = previous + event.key;
+             document.getElementById('res').innerHTML = eval(ar.join(""));
+             } 
+            
+            
+        });
+        
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+

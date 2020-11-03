@@ -5,49 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Calculator in JS</title>
+
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="header">
             <form name="form">
            <div class="result">
-            <input type="text" name="res" />
+             <div id="res"></div> 
+            
            </div> 
 
            <div class="calcu">
-            <input type="text" name="cals" />
+             <div id="calu"></div> 
+            
            </div> 
 
         </div>
         <div class="main">
-            <input type="button" value="AC"onclick="form.cals.value =''">
-            <input type="button" value="C" onclick="form.cals.value +='C'">
-            <input type="button" value="%" onclick="form.cals.value +='%'">
-            <input type="button" value="/" onclick="form.cals.value +='/'" class="rightbtn /">
+            <input type="button" value="AC" onclick=allclear()>
+            <input type="button" value="C" onclick=clear1()>
+            <input type="button" value="%" onclick=container(this)>
+            <input type="button" value="/" onclick=container(this) class="rightbtn /">
         </div>
         <div class="main1">
-            <input type="button" value="7" onclick="form.cals.value +='7'">
-            <input type="button" value="8" onclick="form.cals.value +='8'">
-            <input type="button" value="9" onclick="form.cals.value +='9'">
-            <input type="button" value="X" onclick="form.cals.value +='*'" class="rightbtn /">
+            <input type="button" value="7" id="seven" onclick=container(this) />
+            <input type="button" value="8" onclick=container(this)>
+            <input type="button" value="9" onclick=container(this)>
+            <input type="button" value="*" onclick=container(this) class="rightbtn /">
         </div>
         <div class="main1">
-            <input type="button" value="4" onclick="form.cals.value +='4'">
-            <input type="button" value="5" onclick="form.cals.value +='5'">
-            <input type="button" value="6" onclick="form.cals.value +='6'">
-            <input type="button" value="-" onclick="form.cals.value +='-'" class="rightbtn /">
+            <input type="button" value="4" onclick=container(this)>
+            <input type="button" value="5" onclick=container(this)>
+            <input type="button" value="6" onclick=container(this)>
+            <input type="button" value="-" onclick=container(this) class="rightbtn /">
         </div>
         <div class="main1">
-            <input type="button" value="1" onclick="form.cals.value +='1'">
-            <input type="button" value="2" onclick="form.cals.value +='2'">
-            <input type="button" value="3" onclick="form.cals.value +='3'">
-            <input type="button" value="+" onclick="form.cals.value +='+'" class="rightbtn /">
+            <input type="button" value="1" onclick=container(this)>
+            <input type="button" value="2" onclick=container(this)>
+            <input type="button" value="3" onclick=container(this)>
+            <input type="button" value="+"onclick=container(this) class="rightbtn /">
         </div>
         <div class="main1">
-            <input type="button" value="0" onclick="form.cals.value +='0'">
-            <input type="button" value="00" onclick="form.cals.value +='00'">
-            <input type="button" value="," onclick="form.cals.value +=','" class="rightbtn">
-            <input type="button" value="=" onclick="form.res.value =eval(form.cals.value)" class="equalto /">
+            <input type="button" value="0" onclick=container(this)>
+            <input type="button" value="00" onclick=container(this)>
+            <input type="button" value="." onclick=container(this)>
+            <input type="button" value="=" onclick=container(this) class="equalto /">
         </div>
     </form>
     </div>

@@ -6,66 +6,20 @@
     <title>try</title>
 </head>
 <body>
-    <form name="form">
-        <!-- <input type="text" name="answer" /><br>
-        <input type="text" id="print1">
-        <input type="submit" onclick="ok()" value="Click Me"> -->
-
-
-        <input type="text" id="try" onfocus="style1()" >
-        <input type="text" id="show">
-<!-- 
-        <input type="text" onkeyup="ok1()">
-        <input type="text" onkeydown="ok2()"> -->
-
-    </form>
-
-    <!-- <script>
-    //    function ok(){
-    //      a=document.getElementById('answer').value;
-    //      document.getElementById('print1').innerHTML=a;
-    //    }
-    <script> -->
-        <script>
-        // function ok() {
-        //  var  a=document.getElementById('try').value;
-        //     document.getElementById('show').value=a;
-            
-        // }
-//         document.onkeypress = function(myEvent) { // doesn't have to be "e"
-//     console.log(myEvent.which);
-// };
-// function style1(){
-//     document.getElementById('try').style.outline = "none";
-//     document.getElementById('try').style.border = "none";
-
-// }
- document.onkeypress = function(e) {
- //var  a=document.getElementById('try').value;
-    
-          var v = document.getElementById('show').value = e.key;
-        
-          //document.getElementById('show').innerHTML = v + e.key;
-          console.log(v + e.key)
-
-
-        //    if(e.key==1){
-        //        alert('Nooooo');
-        //    }
-        //    else{
-        //        alert("Yes");
-        //    }
-            
-   //alert(e.key)
-
-        // function ok1() {
-        //     alert("Hiiii");
-        // }
-
-        // function ok2() {
-        //     alert("sbehf");
-        // }
-        }
-    </script>
+    <script>  
+        // Declare and initialize an array 
+        var array = ["pop", "splice", "filter", "aakash",'tre',34] 
+          
+        document.write("Original array: " + array + "<br>") 
+          
+        // Loop run while array length not zero 
+        while (array.length) { 
+          
+            // Remove elements from array 
+            array.pop(); 
+        } 
+        document.write("Array Length: " + array.length ) 
+          
+        </script>
 </body>
 </html>

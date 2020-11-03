@@ -33,6 +33,7 @@ body{
     font-weight: 700;
     font-size: 36px;
     float: right;
+    width: 95%;
     text-align: right;
     margin-right: 0px;
 
@@ -46,6 +47,7 @@ body{
 .calcu input{
     background: transparent;
     border:none;
+    width: 95%;
     color: #e8e5e5;
     font-size: 20px;
     float: right;
