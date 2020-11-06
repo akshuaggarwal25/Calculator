@@ -7,11 +7,17 @@
 </head>
 <body>
     
+    <div id="output"></div>
+
 
     <script>
-        document.addEventListener('keyup',function(event){
-            console.log(event.key);
-        })
+        var arr = [1, 2, 3, 4, 5, 6];
+   
+    var newValue = 10;
+
+    arr = arr.fill(newValue, -1);
+
+    document.getElementById("output").innerHTML  = arr;
     </script>
 </body>
 </html>
